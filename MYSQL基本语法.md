@@ -18,6 +18,10 @@
 
 10.更改字段数据类型:alter table tbname modify column column_name new_data_type;
 
-11.查看表内数据类型：show column from tbname;
+11.查看表内数据类型：show columns from tbname;
 
 12.删除表内所有内容：delete from tbname
+
+13.按中文拼音排序：select * from musician_ordered order by convert(name using gbk) collate gbk_chinese_ci;
+
+14.修改主键为其他列：1.alter table TABNAME drop primary key; 2‘alter table TABNAME add primary key(another_col,...);
