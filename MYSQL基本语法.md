@@ -25,3 +25,5 @@
 13.按中文拼音排序：select * from musician_ordered order by convert(name using gbk) collate gbk_chinese_ci;
 
 14.修改主键为其他列：1.alter table TABNAME drop primary key; 2‘alter table TABNAME add primary key(another_col,...);
+
+15.插入数据：insert into tbnames(column_name1,column_name2,column_name3...) values(value1,value2...)
