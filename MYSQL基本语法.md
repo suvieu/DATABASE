@@ -16,9 +16,12 @@
 
 创建新表：CREATE TABBLE table_name (column_name column_type); 比如 create table mtime(NAME varchar(250) PRIMARY KEY,LINK varchar(250),point int,YEAR varchar(250));
 
-更改字段数据类型:alter table tbname modify column column_name new_data_type;
+插入数据：INSERT INTO tbnames(column_name1,column_name2,column_name3...) values(value1,value2...)
 
 查看表内数据类型：SHOW COLUMNS FROM tbname;
+
+更改字段数据类型:alter table tbname modify column column_name new_data_type;
+
 
 删除表内所有内容：DELETE FROM  tbname
 
@@ -26,4 +29,3 @@
 
 修改主键为其他列：1.alter table TABNAME drop primary key; 2‘alter table TABNAME add primary key(another_col,...);
 
-插入数据：INSERT INTO tbnames(column_name1,column_name2,column_name3...) values(value1,value2...)
